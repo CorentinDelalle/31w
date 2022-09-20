@@ -37,6 +37,7 @@ h1{
 
   </style>
 </head>
+<?php get_header(); ?>
 <body>
   <?php
   		if ( have_posts() ) :
@@ -51,4 +52,5 @@ h1{
 
   
 </body>
+<?php get_footer(); ?>
 </html>
