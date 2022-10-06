@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package underscore
+ * @package underscores
  */
 
 ?>
@@ -21,21 +21,34 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<?php wp_nav_menu(array(
+				"menu" => "principal",
+				"container" => "nav",
+				"container_class" => "menu__principal"
+		)) ;?>
+
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			$underscore_description = get_bloginfo( 'description', 'display' );
-			if ( $underscore_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $underscore_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+	<header id="masthead" class="site__header">
+		<div class="site__branding">
+				<h1 class="site__title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</h1>
+	<?php
+			$undercores_description = get_bloginfo( 'description', 'display' );
+			if ( $undercores_description || is_customize_preview() ) :?>
+				<p class="site__description"><?php echo $undercores_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
-		</div>
-
-	
+		</div><!-- .site-branding -->
+		
 	</header><!-- #masthead -->
+	<aside class="widget_area">
+		<h2>Menu secondaire</h2>
+		<?php wp_nav_menu(array(
+			"menu" => "aside",
+			"container" => "nav",
+			"container_class" => "menu__aside"
+		)); 
+			?>
+	</aside>
+

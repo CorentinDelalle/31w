@@ -20,9 +20,12 @@
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
-				the_post();
-                the_title('<h2>','</h2>');
-                the_content(null,true);
+				the_post(); // puede ser un post o un articulo 
+                // the_title('<h2> ','</h2>');?>
+                <h1><a href=" <?php the_permalink()?> "><?php the_title() ?></a></h1>
+                <?php the_content(null,true);
+               
+                ; // quienes son los titulos y los post, nos muestras el link del post 
             endwhile;
         endif;        
     ?>            
@@ -30,5 +33,3 @@
     
 <?php get_footer(); ?>
 </html> 
-
-
