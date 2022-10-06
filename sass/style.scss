@@ -29,11 +29,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "variables/structure";
 @import "variables/polices";
 
-/* normalize et box sizing 
+// normalize et box sizing 
 @import "generic/normalize";
-@import "generic/box-sizing";*/
+@import "generic/box-sizing";
 
 // les éléments de base 
 
 @import "base/body";
+@import "base/heading";
+@import "base/simple";
+@import "base/links";
+@import "base/button";
+@import "base/fields";
+@import "base/hr";
+@import "base/lists";
+@import "base/media";
 //@import "base/heading";
+
+// les composants
+@import "./composants/nav_principal";
+//layout
+@import  "./layouts/sidebar-content"
