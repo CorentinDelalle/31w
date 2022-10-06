@@ -1,4 +1,21 @@
 body{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
   background-color: $couleur__background-body;
+  // color:$couleur__text-input;
+
+}
+main{
+  font-family: $police__main;
+  // font-size: $police__titre-secondaire-size;
+}
+
+header a {
+  background-color: $couleur__background-body;
+  color:$couleur__text-header;
+  text-shadow: 0 0 30px #e0e1e1;
+  
+}
+
+.trace {
+  background-color: white;
 }
