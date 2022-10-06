@@ -1,1 +1,50 @@
-$couleur__background-body: antiquewhite;
+// $couleur__background-body : #31333a;
+// $couleur__text-input: #C5C6C7;
+// $couleur__background-header:#45A29E;
+$couleur__text-header:#FFFFFF;
+// $couleur__background-titre:#99DDFF;
+
+// $couleur__background--h1: rgb(114, 174, 167);
+// $couleur__background--h2h3h4: rgb(108, 200, 206);
+
+
+// $couleur__background--small:#78797c;
+
+$couleur__background-body: #F8FAFF;
+/* ----------------------------------- Couleur d'arrière plan titres */
+$couleur__background--h1: rgba(233, 237, 248, 0.971);
+$couleur__background--h2h3h4: rgb(215, 215, 231);
+$couleur__background--h5h6: rgb(154, 153, 172);
+$couleur__background--code: rgb(213, 208, 230);
+
+/* --------------------------------------- couleur   color :  */
+$couleur__h1: rgba(25, 41, 88, 0.971);
+$couleur__h2h3h4: rgb(16, 12, 114);
+$couleur__h5h6: rgb(16, 12, 114);
+$couleur__code: rgb(14, 13, 17);
+
+/* --------------------- Couleurs des liens */
+$couleur__link: #55f;
+$couleur__link--visited: #016EDF;
+$couleur__link--hover: #016EDF;
+
+/*-------------- couelur bouton ------- */ 
+$color__border-button: #124DB0;
+$color__background-button:#124DB0;
+$color__border-button-hover:#0e3a86;
+$color__border-button-focus:#09295f;
+
+/*------------------------------- couleur fields inputs text*/
+
+$color__text-input:#384764;
+$color__border-input:#273145;
+$color__text-input-focus:#1b2331;
+
+/*------------------------- couleur hr (ligne horizontale)--------  */
+$color__background-hr:#d9dbe0;
+
+
+/*------   simple -----*/
+ $color__background-pre:#d9dbe0;
+ $color__border-abbr:#eeeeef;
+ $color__background-ins:#eeeeef;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: A22-31w
 Theme URI: http://underscores.me/
@@ -23,10 +24,31 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+/* ----------------------------------- Couleur d'arrière plan titres */
+/* --------------------------------------- couleur   color :  */
+/* --------------------- Couleurs des liens */
+/*-------------- couelur bouton ------- */
+/*------------------------------- couleur fields inputs text*/
+/*------------------------- couleur hr (ligne horizontale)--------  */
+/*------   simple -----*/
+/*--------------------------*/
 /* normalize et box sizing 
 @import "generic/normalize";
 @import "generic/box-sizing";*/
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: antiquewhite;
+  background-color: #F8FAFF;
+}
+
+main {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+header a {
+  background-color: #F8FAFF;
+  color: #FFFFFF;
+  text-shadow: 0 0 30px #e0e1e1;
+}
+
+.trace {
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */
