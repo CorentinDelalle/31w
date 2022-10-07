@@ -403,6 +403,10 @@ h2, h3, h4, h5, h6 {
   font-family: "Roboto Medium 500", sans-serif;
 }
 
+.widget_area > h2 {
+  text-align: center;
+}
+
 small, pre, code {
   background-color: rgb(213, 208, 230);
   margin: 10px;
@@ -587,19 +591,6 @@ hr {
   margin-bottom: 1.5em;
 }
 
-ul,
-ol {
-  margin: 0 0 1.5em 3em;
-}
-
-ul {
-  list-style: disc;
-}
-
-ol {
-  list-style: decimal;
-}
-
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -612,6 +603,10 @@ dt {
 
 dd {
   margin: 0 1.5em 1.5em;
+}
+
+li {
+  margin-bottom: 3px;
 }
 
 /* Make sure embeds and iframes fit their containers. */
