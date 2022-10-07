@@ -382,6 +382,19 @@ main {
   color: white;
 }
 
+.articleBlog {
+  margin-top: 30px;
+  min-height: 200px;
+  padding: 10px;
+  width: 70vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.articleBlog:hover {
+  transform: scale(1.03);
+  transition-duration: 200ms;
+}
+
 h1 {
   font-family: "Roboto Bold 700", sans-serif;
 }
@@ -638,6 +651,10 @@ figure {
 }
 
 /*-------- transformation en css -------*/
+.menu__aside li {
+  list-style-type: none;
+}
+
 .site {
   display: grid;
   grid-template-columns: 25% auto;
