@@ -8,9 +8,10 @@
   
       .menu { //ul 
           list-style: none;
+          align-items: center;
           display: flex;
-          justify-content: space-around;
           background-color: rgb(137, 0, 0);
+          height: 40px;
           margin: 0;
   
           .menu-item{ //li 
@@ -18,11 +19,13 @@
                 a{
                   text-decoration: none;
                   color: white;
+                  margin-right: 50px;
+                  font-family: 'Roboto', sans-serif;;
+
   
                 } 
                 a:hover{
                   color: rgb(143, 143, 143);
-                  padding: 5px;
                 } 
   
           }

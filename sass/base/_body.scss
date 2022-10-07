@@ -9,13 +9,25 @@ main{
   // font-size: $police__titre-secondaire-size;
 }
 
-header a {
-  background-color: $couleur__background-body;
-  color:$couleur__text-header;
-  text-shadow: 0 0 30px #e0e1e1;
-  
-}
+
 
 .trace {
   background-color: white;
+}
+
+.site__branding{
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  padding: 20px 0px;
+}
+
+.site__branding>h1{
+  margin: 0;
+
+  text-decoration: none;
+}
+
+.site__title>a{
+  text-decoration: none;
+  color: white;
 }

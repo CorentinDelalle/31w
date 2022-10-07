@@ -31,6 +31,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*------------------------------- couleur fields inputs text*/
 /*------------------------- couleur hr (ligne horizontale)--------  */
 /*------   simple -----*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 /*--------------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -358,25 +359,35 @@ body {
 }
 
 main {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-header a {
-  background-color: #F8FAFF;
-  color: #FFFFFF;
-  text-shadow: 0 0 30px #e0e1e1;
+  font-family: "Roboto Light 300", sans-serif;
 }
 
 .trace {
   background-color: white;
 }
 
+.site__branding {
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  padding: 20px 0px;
+}
+
+.site__branding > h1 {
+  margin: 0;
+  text-decoration: none;
+}
+
+.site__title > a {
+  text-decoration: none;
+  color: white;
+}
+
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Roboto Bold 700", sans-serif;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto Medium 500", sans-serif;
 }
 
 small, pre, code {
@@ -461,6 +472,22 @@ a:focus {
   outline: thin dotted;
 }
 a:hover, a:active {
+  outline: 0;
+}
+
+.menu__aside a {
+  color: #55f;
+}
+.menu__aside a:visited {
+  color: #016EDF;
+}
+.menu__aside a:hover, .menu__aside a:focus, .menu__aside a:active {
+  color: #016EDF;
+}
+.menu__aside a:focus {
+  outline: thin dotted;
+}
+.menu__aside a:hover, .menu__aside a:active {
   outline: 0;
 }
 
@@ -594,18 +621,20 @@ figure {
 
 .menu__principal .menu {
   list-style: none;
+  align-items: center;
   display: flex;
-  justify-content: space-around;
   background-color: rgb(137, 0, 0);
+  height: 40px;
   margin: 0;
 }
 .menu__principal .menu .menu-item a {
   text-decoration: none;
   color: white;
+  margin-right: 50px;
+  font-family: "Roboto", sans-serif;
 }
 .menu__principal .menu .menu-item a:hover {
   color: rgb(143, 143, 143);
-  padding: 5px;
 }
 
 /*-------- transformation en css -------*/
