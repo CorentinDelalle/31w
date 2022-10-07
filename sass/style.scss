@@ -48,5 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 // les composants
 @import "./composants/nav_principal";
+@import "./composants/nav_aside";
+@import "./composants/entete";
 //layout
 @import  "./layouts/sidebar-content"

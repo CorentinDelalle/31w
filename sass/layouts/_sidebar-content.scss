@@ -5,6 +5,15 @@
 		"header header"
 		"sidebar main"
 		"footer footer";
+
+		@media screen and (max-width:700px){
+			grid-template-columns: auto;
+			grid-template-areas:
+				"header"
+				"main"
+				"footer";
+		}
+
 }
 
 .site__header {
@@ -23,5 +32,6 @@
 .site__footer {
 	grid-area: footer;
 }
+
 
 @import "no-sidebar";
