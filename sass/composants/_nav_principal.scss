@@ -10,16 +10,18 @@
           list-style: none;
           display: flex;
           justify-content: space-around;
+          background-color: rgb(137, 0, 0);
+          margin: 0;
   
           .menu-item{ //li 
   
                 a{
                   text-decoration: none;
+                  color: white;
   
                 } 
                 a:hover{
-                  background-color: #124DB0;
-                  color: white;
+                  color: rgb(143, 143, 143);
                   padding: 5px;
                 } 
   
