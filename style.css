@@ -645,9 +645,40 @@ figure {
   list-style-type: none;
 }
 
+.twitter {
+  padding: 20px;
+}
+
+.reddit {
+  padding: 20px;
+}
+
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: rgb(148, 10, 10);
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.site__footer div {
+  flex: 1;
+}
+
+#sidebar-footer-01 {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav_menu-2 {
+  list-style: none;
+  text-decoration: none;
+}
+
 .site {
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: 30% auto;
   grid-template-areas: "header header" "sidebar main" "footer footer";
 }
 @media screen and (max-width: 700px) {
@@ -672,6 +703,18 @@ figure {
 
 .site__footer {
   grid-area: footer;
+}
+
+.sidebar li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: larger;
+  color: white;
+  cursor: pointer;
 }
 
 .no-sidebar .site {

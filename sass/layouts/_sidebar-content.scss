@@ -27,11 +27,23 @@
 
 .widget__area {
 	grid-area: sidebar;
+
 }
 
 .site__footer {
 	grid-area: footer;
 }
 
+.sidebar li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.sidebar a{
+	text-decoration: none;
+	font-size: larger;
+	color:white;
+	cursor: pointer;
+}
 
 @import "no-sidebar";

@@ -105,7 +105,7 @@ function my_register_sidebars() {
 	/* Register the 'footer-1' sidebar. */
 	register_sidebar(
 		array(
-			'id'            => 'footer-1',
+			'id'            => 'footer-01',
 			'name'          => __( 'Sidebar 1 - footer' ),
 			'description'   => __( 'Premier sidebar du footer' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -117,7 +117,7 @@ function my_register_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 	register_sidebar(
 		array(
-			'id'            => 'footer-2',
+			'id'            => 'footer-02',
 			'name'          => __( 'Sidebar 2 - footer' ),
 			'description'   => __( 'Deuxième sidebar du footer' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -128,7 +128,7 @@ function my_register_sidebars() {
 	);
 	register_sidebar(
 		array(
-			'id'            => 'footer-3',
+			'id'            => 'footer-03',
 			'name'          => __( 'Sidebar 3 - footer' ),
 			'description'   => __( 'Troisième sidebar du footer' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -140,8 +140,8 @@ function my_register_sidebars() {
 	register_sidebar(
 		array(
 			'id'            => 'aside-1',
-			'name'          => __( 'Sidebar 4 - asside' ),
-			'description'   => __( 'Premier sidebar du asside' ),
+			'name'          => __( 'Sidebar 4 - aside' ),
+			'description'   => __( 'Premier sidebar du aside' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -151,8 +151,8 @@ function my_register_sidebars() {
 	register_sidebar(
 		array(
 			'id'            => 'aside-2',
-			'name'          => __( 'Sidebar 5 - asside' ),
-			'description'   => __( 'Deuxième sidebar du asside' ),
+			'name'          => __( 'Sidebar 5 - aside' ),
+			'description'   => __( 'Deuxième sidebar du aside' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',

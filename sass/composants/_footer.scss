@@ -3,10 +3,22 @@
   justify-content: space-between;
   gap: 10px;
   background-color:rgb(148, 10, 10);
+  padding: 30px;
+  margin-top: 50px;
 }
 
 .site__footer div {
   flex: 1;
-  // border: 1px solid #016EDF;
 
+
+}
+
+#sidebar-footer-01{
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav_menu-2{
+  list-style: none;
+  text-decoration: none;
 }
