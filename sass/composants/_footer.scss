@@ -1,0 +1,12 @@
+.site__footer{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color:rgb(148, 10, 10);
+}
+
+.site__footer div {
+  flex: 1;
+  // border: 1px solid #016EDF;
+
+}

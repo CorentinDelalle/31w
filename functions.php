@@ -98,3 +98,65 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 	return $obj_menu;
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
+
+/** ----------------- initialisation des sidebar */
+add_action( 'widgets_init', 'my_register_sidebars' );
+function my_register_sidebars() {
+	/* Register the 'footer-1' sidebar. */
+	register_sidebar(
+		array(
+			'id'            => 'footer-1',
+			'name'          => __( 'Sidebar 1 - footer' ),
+			'description'   => __( 'Premier sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	/* Repeat register_sidebar() code for additional sidebars. */
+	register_sidebar(
+		array(
+			'id'            => 'footer-2',
+			'name'          => __( 'Sidebar 2 - footer' ),
+			'description'   => __( 'Deuxième sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'footer-3',
+			'name'          => __( 'Sidebar 3 - footer' ),
+			'description'   => __( 'Troisième sidebar du footer' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'aside-1',
+			'name'          => __( 'Sidebar 4 - asside' ),
+			'description'   => __( 'Premier sidebar du asside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'id'            => 'aside-2',
+			'name'          => __( 'Sidebar 5 - asside' ),
+			'description'   => __( 'Deuxième sidebar du asside' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+}
