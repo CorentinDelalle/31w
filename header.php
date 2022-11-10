@@ -42,16 +42,22 @@
 		</div><!-- .site-branding -->
 		
 	</header><!-- #masthead -->
-	<aside class="widget_area">
-		<h2>Menu secondaire</h2>
+	
+	<aside class="site__menu">
+	<input type="checkbox" name="chk-burger" id="chk-burger"class="chk-burger" >
+		<label class="burger" for="chk-burger">&#127829;</label>
+
+		<!-- <h2>Menu secondaire</h2> -->
 		<?php wp_nav_menu(array(
 			"menu" => "aside",
 			"container" => "nav",
 			"container_class" => "menu__aside"
 		)); 
 			?>
-			<div> <?php get_sidebar('aside-1');?> </div>		
-			<div> <?php get_sidebar('aside-2');?> </div>	
 
-	</aside>
+</aside>
+<aside class="site__sidebar">
+<div> <?php get_sidebar('asside-2');?> </div>		
+<div> <?php get_sidebar('asside-1');?> </div>		
+</aside>
 
