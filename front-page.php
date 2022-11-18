@@ -20,12 +20,14 @@
     <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
-				the_post(); // puede ser un post o un articulo 
-                // the_title('<h2> ','</h2>');?>
+				the_post(); ?>
                 <div class="articleBlog">
-                <h1><a href=" <?php the_permalink()?> "><?php the_title() ?></a></h1>
-                <?php the_content(null,true);
-                ?></div>
+                <h1><a href=" <?php the_permalink()?> ">
+                <?php the_title() ?></a></h1>
+
+                <?php if (has_post_thumbnail()){
+                    the_post_thumbnail('thumbnail');}?>
+                <?php wp_trim_words(get_the_excerpt(),10,"...");?></div>
                
            <?php endwhile;
         endif;        
