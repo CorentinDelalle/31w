@@ -16,14 +16,23 @@
 
 
 <?php get_header(); ?>
+
     <main class="site_main">
     <?php
+        wp_nav_menu(array(
+            "menu" => "evenement",
+            "container" => "nav",
+            "container_class" => "menu__evenement"
+        ));
+
+
 		if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); ?>
                 <div class="articleBlog">
                 <h1><a href=" <?php the_permalink()?> ">
                 <?php the_title() ?></a></h1>
+                <?php the_content(null,true) ?>
 
                 <?php if (has_post_thumbnail()){
                     the_post_thumbnail('thumbnail');}?>
