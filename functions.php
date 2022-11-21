@@ -105,6 +105,16 @@ function igc31w_filtre_choix_menu($obj_menu, $arg){
 }
 add_filter("wp_nav_menu_objects","igc31w_filtre_choix_menu", 10,2);
 
+function prefix_nav_description( $item_output, $item) {
+	if ( !empty( $item->description ) ) {
+			$item_output = str_replace( '</a>',
+			'<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu__item__icone"></div></a>',
+						$item_output );
+	}
+	return $item_output;
+}
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
+
 /** ----------------- initialisation des sidebar */
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
@@ -166,3 +176,14 @@ function my_register_sidebars() {
 		)
 	);
 }
+
+/*
+function igc_31w_filtre_requete( $query ) {
+	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'category_name', 'accueil' );
+	}
+}
+add_action( 'pre_get_posts', 'igc_31w_filtre_requete' );
+
+
+//require_once("options/apparence.php"); */

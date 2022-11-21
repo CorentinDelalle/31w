@@ -26,7 +26,7 @@
         ));
 
 
-		if ( have_posts() ) :
+		/*if ( have_posts() ) :
             while ( have_posts() ) :
 				the_post(); ?>
                 <div class="articleBlog">
@@ -41,7 +41,43 @@
            <?php endwhile;
         endif;        
     ?>            
+    </main> */
+
+    if ( have_posts() ) :
+            while ( have_posts() ) :
+				the_post(); ?>
+
+                <div class="articleBlog">
+                    <h1><a href=" <?php the_permalink()?> "><?php the_title() ?></a></h1>
+                       
+                    <?php 
+                    $myArray = get_the_category();
+                    $boolGalerie = false;
+                    foreach($myArray as $key){
+                        if($key->slug =="galerie"){
+                            $boolGalerie = true;
+                        }
+                    };
+                    if ($boolGalerie == true) {
+                        the_content(null,true);
+                    } else {
+                        
+                        echo wp_trim_words(get_the_excerpt(),35,"...");
+                    }
+                    ?>
+                    <?php
+                        if(has_post_thumbnail()){
+                            the_post_thumbnail('thumbnail');
+                        }
+                        ?>
+                </div>
+               <?php
+                ; 
+            endwhile;
+        endif;        
+    ?>            
     </main>
+    
     
 <?php get_footer(); ?>
 </html> 
