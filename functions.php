@@ -24,8 +24,8 @@ function undercores_setup() {
     
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'custom-logo', array(
-    'height' => 480,
-    'width'  => 720,
+    'height' => 80,
+    'width'  => 80,
 ) );
 
 	add_theme_support( 'post-thumbnails' );
@@ -86,10 +86,7 @@ function mon_31w_register_nav_menu(){
 add_action( 'after_setup_theme', 'mon_31w_register_nav_menu', 0 );
 
 function igc31w_filtre_choix_menu($obj_menu, $arg){
-	//echo "/////////////////  obj_menu";
-	// var_dump($obj_menu);
-	//  echo "/////////////////  arg";
-	//  var_dump($arg);
+
 
 	if ($arg->menu == "aside"){
 	foreach($obj_menu as $cle => $value)
@@ -188,5 +185,5 @@ function igc_31w_filtre_requete( $query ) {
 add_action( 'pre_get_posts', 'igc_31w_filtre_requete' );
 
 
-//require_once("options/apparence.php"); */
+require_once("options/apparence.php"); 
 

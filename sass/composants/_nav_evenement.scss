@@ -11,16 +11,41 @@
 .menu__evenement_SM {
   background-color: white;
   padding: 10px;
+
+  .menu__item__icone{
+    background-image: url("https://img.icons8.com/fluency/512/super-mario.png");
+    height: 50px;
+    width: 50px;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
 }
 
 .menu__evenement_KI{
   background-color: white;
   padding: 10px;
+  .menu__item__icone{
+    background-image: url("https://images.wikidexcdn.net/mwuploads/esssbwiki/0/07/latest/20180613002925/Kirby_SSBU.png");
+    height: 50px;
+    width: 50px;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
 }
 
 .menu__evenement_TN {
   background-color: white;
   padding: 10px;
+  .menu__item__icone{
+    background-image: url("https://stickers-muraux-enfant.fr/12269-thickbox_default/stickers-enfant-tortues-ninja-ref-55024.jpg");
+    height: 50px;
+    width: 50px;
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
 }
 
 .menu__evenement .menu{
@@ -47,4 +72,13 @@
   text-decoration: none;
   color: black;
   
+}
+
+.menu__evenement_TN:hover,
+.menu__evenement_KI:hover,
+.menu__evenement_SM:hover
+ {
+  transform: scale(1.10);
+  transition-duration: 0.5s;
+  cursor: pointer; 
 }
