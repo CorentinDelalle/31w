@@ -817,18 +817,6 @@ figure {
   flex: 0 1 20%;
 }
 
-.site {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "menu" "main" "header" "sidebar" "footer";
-}
-@media screen and (min-width: 700px) {
-  .site {
-    grid-template-columns: 30% auto;
-    grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
-  }
-}
-
 .site__header {
   grid-area: header;
 }
@@ -839,6 +827,10 @@ figure {
 }
 
 .site__menu {
+  grid-area: menu;
+}
+
+.site__sidebar {
   grid-area: sidebar;
 }
 
@@ -846,16 +838,68 @@ figure {
   grid-area: footer;
 }
 
-.sidebar li {
-  list-style: none;
-  margin-bottom: 10px;
+.sidebar h2, h3 {
+  text-transform: uppercase;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  color: red;
 }
 
-.sidebar a {
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidebar a:hover {
+  color: green;
+  transition-duration: 0.6s;
+}
+
+.aside__calendrier, .aside__rss {
+  padding: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 100%;
+}
+
+.aside__calendrier {
+  margin-left: 0;
+}
+
+.wp-calendar-table thead th {
+  background-color: blue;
+  color: red;
+}
+
+.footer__utiles a {
   text-decoration: none;
-  font-size: larger;
-  color: white;
-  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+.widget_block {
+  margin: 5px;
+  padding: 5px;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "menu" "header" "main" "sidebar" "footer";
+}
+@media screen and (min-width: 700px) {
+  .site {
+    grid-template-columns: 30% auto;
+    grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
+  }
 }
 
 .no-sidebar .site {

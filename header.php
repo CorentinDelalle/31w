@@ -18,15 +18,27 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	<style>
+	.site__header { 
+		background-color:<?= get_theme_mod("site__title__background"); ?>;
+		}
+		.site__footer { 
+		background-color:<?= get_theme_mod("site__footer__background"); ?>;
+		}
+
+	</style>
 </head>
 
 <body <?php body_class(); ?>>
 
-<?php wp_nav_menu(array(
+<nav class="menu__principal">
+	<?= get_custom_logo();?>
+	<?php wp_nav_menu(array(
 				"menu" => "principal",
-				"container" => "nav",
-				"container_class" => "menu__principal"
+				"container" => "",
+				"container_class" => ""
 		)) ;?>
+</nav>
 
 <?php wp_body_open(); ?>
 <div id="page" class="site">
@@ -55,9 +67,10 @@
 		)); 
 			?>
 
-</aside>
+
 <aside class="site__sidebar">
-<div> <?php get_sidebar('asside-2');?> </div>		
-<div> <?php get_sidebar('asside-1');?> </div>		
+<div> <?php get_sidebar('aside-2');?> </div>		
+<div> <?php get_sidebar('aside-1');?> </div>		
+</aside>
 </aside>
 
