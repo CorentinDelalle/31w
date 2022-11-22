@@ -626,9 +626,10 @@ figure {
   list-style: none;
   align-items: center;
   display: flex;
-  background-color: rgb(18, 0, 137);
-  height: 40px;
+  background-color: rgb(41, 51, 92);
+  height: 60px;
   margin: 0;
+  padding: 10px;
 }
 .menu__principal .menu .menu-item a {
   text-decoration: none;
@@ -708,11 +709,22 @@ figure {
   padding: 20px;
 }
 
+.site__branding {
+  text-align: center;
+}
+
+.site_main {
+  padding: 0;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
 .site__footer {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  background-color: rgb(33, 148, 10);
+  background-color: rgb(41, 51, 92);
   padding: 30px;
   margin-top: 50px;
 }
