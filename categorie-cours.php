@@ -16,17 +16,20 @@
 
 
 <?php get_header(); ?>
+
     <main class="site_main">
-    <?php
+        <section class="liste">
+        <?php
 		if ( have_posts() ) :
             while ( have_posts() ) :
-				the_post();
-                // the_title('<h2> ','</h2>');?>
-
-                <div class="article__wordpress">
+				the_post();?>
+                <article class="liste__cours">
+                <!--<div class="article__wordpress">-->
                     <h1><a href=" <?php the_permalink()?> ">
-                        <?php the_title() ?></a></h1>
-                        <h4>Durée du cours: <?php the_field('duree')?> heures  </h4>
+                    <?php the_title() ?></a></h1>
+                    <h4>Durée du cours: <?php the_field('duree')?> heures  </h4>
+                    <?php the_content(null,true); ?>
+                </article>
 
                         
                         <?php the_field('editeur'); ?>
@@ -41,7 +44,8 @@
                 ; 
             endwhile;
         endif;        
-    ?>            
+    ?> 
+    </section>           
     </main>
     
 <?php get_footer(); ?>

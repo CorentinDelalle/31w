@@ -115,6 +115,8 @@ function prefix_nav_description( $item_output, $item) {
 }
 add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
 
+
+
 /** ----------------- initialisation des sidebar */
 add_action( 'widgets_init', 'my_register_sidebars' );
 function my_register_sidebars() {
@@ -177,7 +179,7 @@ function my_register_sidebars() {
 	);
 }
 
-/*
+
 function igc_31w_filtre_requete( $query ) {
 	if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
 		$query->set( 'category_name', 'accueil' );
@@ -187,3 +189,4 @@ add_action( 'pre_get_posts', 'igc_31w_filtre_requete' );
 
 
 //require_once("options/apparence.php"); */
+
