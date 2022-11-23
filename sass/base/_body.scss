@@ -6,13 +6,11 @@
 
 body{
    
-  background-color: $couleur__background-body;
-  // color:$couleur__text-input;
+
 
 }
 main{
-  font-family: $police__main;
-  // font-size: $police__titre-secondaire-size;
+
 }
 
 
@@ -23,7 +21,8 @@ main{
 
 .site__branding{
   text-align: center;
-  background-color: rgb(211, 211, 211);
+  background: rgb(122,122,122);
+  background: linear-gradient(176deg, rgba(122,122,122,1) 0%, rgba(232,232,232,1) 82%);
   padding: 20px 0px;
 }
 

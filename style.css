@@ -359,21 +359,14 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-color: #F8FAFF;
-}
-
-main {
-  font-family: "Roboto Light 300", sans-serif;
-}
-
 .trace {
   background-color: white;
 }
 
 .site__branding {
   text-align: center;
-  background-color: rgb(211, 211, 211);
+  background: rgb(122, 122, 122);
+  background: linear-gradient(176deg, rgb(122, 122, 122) 0%, rgb(232, 232, 232) 82%);
   padding: 20px 0px;
 }
 
@@ -867,10 +860,9 @@ figure {
 
 .sidebar h2, h3 {
   text-transform: uppercase;
-  color: white;
+  color: grey;
   padding: 5px;
   margin: 5px;
-  color: red;
 }
 
 .sidebar ul {
@@ -884,7 +876,7 @@ figure {
 }
 
 .sidebar a:hover {
-  color: green;
+  color: grey;
   transition-duration: 0.6s;
 }
 
@@ -902,8 +894,7 @@ figure {
 }
 
 .wp-calendar-table thead th {
-  background-color: blue;
-  color: red;
+  color: white;
 }
 
 .footer__utiles a {
@@ -927,6 +918,10 @@ figure {
     grid-template-columns: 30% auto;
     grid-template-areas: "header header" "menu main" "sidebar main" ". main" "footer footer";
   }
+}
+
+.menu li a {
+  text-decoration: none;
 }
 
 .no-sidebar .site {

@@ -28,10 +28,9 @@
 
 .sidebar h2,h3 {
 	text-transform: uppercase;
-	color: white;
+	color: grey;
     padding: 5px;
     margin: 5px;
-	color:red;
 	
 }
 .sidebar ul {
@@ -45,7 +44,7 @@
 
 }
 .sidebar a:hover{
-	color:green;
+	color:grey;
     transition-duration: .6s;
 }
 
@@ -61,8 +60,8 @@
 	margin-left: 0;
 }
 .wp-calendar-table thead th {
-	background-color: blue;
-	color: red ;
+
+	color: white;
 	
 }
 
@@ -102,6 +101,15 @@
 
 		
 	
+	}
+
+}
+
+.menu{
+	li{
+		a{
+			text-decoration: none;
+		}
 	}
 }
 
