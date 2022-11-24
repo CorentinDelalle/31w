@@ -10,9 +10,10 @@ get_header();
 				<h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'undercores' ), '<span>' . get_search_query() . '</span>' );
+					echo 'Résultats de la recherche';
 					?>
 				</h1>
+        <p><?php printf( esc_html__( 'Éléments de recherche: %s', 'undercores' ), '<span>' . get_search_query() . '</span>' );?></p>
 			</header><!-- .page-header -->
 
       <?php
@@ -20,20 +21,8 @@ get_header();
             while ( have_posts() ) :
 				the_post();
                 the_title('<h2>','</h2>');
-                the_content(null,true); ?>
+                $content = get_the_content(); echo wp_trim_words( get_the_content(), 20, '...' ); ?>
 
-                <section>
-                    <small>
-                    <span> <?php the_weekday();?></span>
-                    <span> <?php the_date();?></span>
-                    <span> <?php the_time();?></span>
-                    </small>
-                    <code>
-                       <?php the_author();?>  </code>
-                    <pre>
-                        <?php the_category(); ?> 
-                    </pre>
-                </section>
                  <?php 
             endwhile;
         endif;        
