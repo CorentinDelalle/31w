@@ -211,3 +211,5 @@ add_action( 'pre_get_posts', 'igc_31w_filtre_requete' );
 
 require_once("options/apparence.php"); 
 
+
+
