@@ -39,7 +39,7 @@ get_header();
 	</main><!-- #main -->
 
   <?php 
-        $allsearch = new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); _e('<span class="search-terms">'); echo $key; _e('</span>'); _e(' &mdash; '); echo $count . ' '; _e('articles'); wp_reset_query(); ?>
+        $allsearch = new WP_Query("s=$s&showposts=-1");  $count = $allsearch->post_count; _e(''); _e('<span class="search-terms">');  _e(' &mdash; '); echo $count . ' '; _e('articles'); wp_reset_query(); ?>
         </div>
 <?php
 get_footer();
