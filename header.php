@@ -52,9 +52,10 @@
 				<p class="site__description"><?php echo $undercores_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
-
-		<div><?php get_sidebar( 'header-01' ); ?></div>
+		<div class="widget-header">
+		<div class="barre-recherche"><?php get_sidebar( 'header-01' ); ?></div>
 		<div><?php get_sidebar( 'header-02' ); ?></div>
+		</div>
 	</header><!-- #masthead -->
 	
 	<aside class="site__menu">

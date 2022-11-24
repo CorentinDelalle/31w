@@ -16,3 +16,14 @@
       border-radius: 5px;
       margin: 10px;
   }
+
+  .barre-recherche{
+	width: 25%;
+    justify-content: right;
+}
+
+.widget-header{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
