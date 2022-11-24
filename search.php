@@ -21,8 +21,9 @@ get_header();
             while ( have_posts() ) :
 				the_post();
                 the_title('<h2>','</h2>');
-                $content = get_the_content(); echo wp_trim_words( get_the_content(), 20, '...' ); ?>
-
+                $permalink = get_the_permalink();
+                $content = get_the_content(); echo wp_trim_words( get_the_content(), 20 ); ?>
+<a href="<?php the_permalink()?>">...</a>
                  <?php 
             endwhile;
         endif;        
